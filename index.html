@@ -4,18 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Loading...</h1>
-    <div class="loading-container">
-        <div class="hoop"></div>
-        <div class="basketball"></div>
-    </div>
-    <div id="content" class="hidden">
-        <h1>Welcome to My Portfolio</h1>
-        <p>Here you will find information about my engineering and basketball journey.</p>
-    </div>
+
+    <header>
+        <h1>Моё портфолио</h1>
+    </header>
+
+    <section class="content">
+        <h2>Обо мне</h2>
+        <p>Я интересуюсь инженерией и баскетболом. Этот сайт — моя личная страница с достижениями.</p>
+    </section>
+
+    <section class="basketball-animation">
+        <canvas id="basketballCanvas"></canvas>
+    </section>
+
+    <footer>
+        <p>&copy; 2025. Все права защищены.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
