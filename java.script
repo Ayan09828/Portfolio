@@ -1,8 +1,4 @@
-function simulateLoading() {
-    setTimeout(() => {
-        document.querySelector('.loading-container').classList.add('hidden');
-        document.querySelector('h1').classList.add('hidden');
-        document.getElementById('content').classList.remove('hidden');
-    }, 3000); // Загрузка 3 секунды
-}
-simulateLoading();
+setTimeout(() => {
+    document.querySelector('.loading-screen').style.display = 'none';
+    document.querySelector('.main-content').style.display = 'block';
+}, 5000); // Через 5 секунд принудительно убираем экран загрузки
