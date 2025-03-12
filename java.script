@@ -1,5 +1,8 @@
-window.onload = function() {
+function simulateLoading() {
     setTimeout(() => {
-        document.querySelector(".loading-screen").style.display = "none";
-    }, 3000);
-};
+        document.querySelector('.loading-container').classList.add('hidden');
+        document.querySelector('h1').classList.add('hidden');
+        document.getElementById('content').classList.remove('hidden');
+    }, 3000); // Загрузка 3 секунды
+}
+simulateLoading();
